@@ -17,14 +17,14 @@ app.post("/synthesize", async (req, res) => {
   // if (text === undefined || text === null || text === '' || text == 0) {
 
   if (!text) {
-    res.status(400).send({ error: "Text is required." });
+    res.status(400).send({ error: "è richiesto un testo" });
     return;
   }
 
   const voice =
     req.body.voice == 0
-      ? "21m00Tcm4TlvDq8ikWAM"
-      : req.body.voice || "21m00Tcm4TlvDq8ikWAM";
+      ? "zcAOhNBS3c14rBihAFp1"
+      : req.body.voice || "zcAOhNBS3c14rBihAFp1";
 
   const voice_settings =
     req.body.voice_settings == 0
@@ -39,7 +39,7 @@ app.post("/synthesize", async (req, res) => {
 
   try {
     const response = await axios.post(
-      `https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM`,
+      `https://api.elevenlabs.io/v1/text-to-speech/zcAOhNBS3c14rBihAFp1`,
       {
         text: text,
         model_id: "eleven_monolingual_v1",
