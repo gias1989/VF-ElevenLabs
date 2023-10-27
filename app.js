@@ -42,7 +42,7 @@ app.post("/synthesize", async (req, res) => {
       `https://api.elevenlabs.io/v1/text-to-speech/zcAOhNBS3c14rBihAFp1`,
       {
         text: text,
-        model_id: "eleven_monolingual_v1",
+        model_id: "eleven_multilingual_v2",
         voice_settings: voice_settings,
       },
       {
