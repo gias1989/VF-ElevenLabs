@@ -29,12 +29,12 @@ app.post("/synthesize", async (req, res) => {
   const voice_settings =
     req.body.voice_settings == 0
       ? {
-          stability: 0,
-          similarity_boost: 0,
+          stability: 0.5,
+          similarity_boost: 0.5,
         }
       : req.body.voice_settings || {
-          stability: 0,
-          similarity_boost: 0,
+          stability: 0.5,
+          similarity_boost: 0.5,
         };
 
   try {
