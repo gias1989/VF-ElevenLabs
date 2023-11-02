@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "now dev --timeout 30s",
+    "deploy": "now --timeout 30s"
   },
   "repository": {
     "type": "git",
