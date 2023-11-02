@@ -5,10 +5,15 @@
             "use": "@vercel/node"
         }
     ],
+    "functions": {
+        "app\\.js": {
+            "maxDuration": 300
+        }
+    },
     "routes": [
         {
-          "src": "/(.*)",
-          "dest": "app.js"
+            "src": "/(.*)",
+            "dest": "app.js"
         }
     ]
-  }
+}
