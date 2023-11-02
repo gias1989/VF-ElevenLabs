@@ -8,7 +8,7 @@
     "functions": {
         "app\\.js": {
             "memory": 3008,
-            "maxDuration": 300
+            "maxDuration": 100
         }
     },
     "routes": [
@@ -17,4 +17,7 @@
             "dest": "app.js"
         }
     ]
-}
+
+
+ 
+}  
